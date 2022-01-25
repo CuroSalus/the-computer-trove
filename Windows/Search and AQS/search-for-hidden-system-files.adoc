@@ -1,0 +1,55 @@
+= Search for Hidden System Files
+
+The Advanced Query Syntax `attributes` option takes a numeric flag as an option.
+It will search for files that match that combination of attributes.
+
+The values of Attributes are defined as flags. To search for an item that
+matches a specific combination of flags, the values need to be
+added/bitwise-OR'd together.
+
+NOTE: In order for this to work, "Show hidden files, folders, and drives" and
+"Hide protected operating system files" must be viewable in Windows Explorer.
+
+CAUTION: Showing protected operating system files can be dangerous. It's likely
+if you're reading this, you know that already. But be warned.
+
+.Relevant Attribute Flags
+|===
+| **Symbol** | **Name** | **Numeric Value**
+| H | Hidden | 2
+| S | System | 4
+| A | Archive (File) | 32
+|===
+
+.Other Attribute Flags
+[source]
+----
+FILE_ATTRIBUTE_READONLY = 1
+FILE_ATTRIBUTE_HIDDEN = 2
+FILE_ATTRIBUTE_SYSTEM = 4
+FILE_ATTRIBUTE_DIRECTORY = 16
+FILE_ATTRIBUTE_ARCHIVE = 32
+FILE_ATTRIBUTE_ENCRYPTED = 64
+FILE_ATTRIBUTE_NORMAL = 128
+FILE_ATTRIBUTE_TEMPORARY = 256
+FILE_ATTRIBUTE_SPARSE_FILE = 512
+FILE_ATTRIBUTE_REPARSE_POINT = 1024
+FILE_ATTRIBUTE_COMPRESSED = 2048
+FILE_ATTRIBUTE_OFFLINE = 4096
+FILE_ATTRIBUTE_NOT_CONTENT_INDEXED = 8192
+----
+
+== Search Query
+
+A parameter value that matches the specified three is required. The result of
+adding the targeted flags is `38`, so the query becomes:
+
+`attributes:38`
+
+To find all hidden system JPGs, the following query can be used:
+
+`ext:jpg attributes:34`
+
+To find all hidden JPGs, the following query can be used:
+
+`ext:jpg attributes:34`

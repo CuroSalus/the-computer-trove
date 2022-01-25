@@ -1,0 +1,9 @@
+= The Computer Trove
+
+Working title until I get a better name for it. >_>
+
+== Rules
+
+* 80-character column width.
+* Asciidoc (Markdown passthrough allowed).
+* Single H1/First-level title per document.
