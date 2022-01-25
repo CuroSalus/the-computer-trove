@@ -1,3 +1,7 @@
 = Windows
 
 Docs related to Windows.
+
+== Sections
+
+* link:./search-and-aqs/readme.adoc[Search and Advanced Query Syntax]

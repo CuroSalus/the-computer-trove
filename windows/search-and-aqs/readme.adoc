@@ -1,3 +1,7 @@
 = Search and Advanced Query Syntax (AQS)
 
 Topics related to Windows Search and Advanced Query Syntax.
+
+== Articles
+
+* link:./search-for-hidden-system-files.adoc[Search for Hidden System Files]

@@ -7,3 +7,8 @@ Working title until I get a better name for it. >_>
 * 80-character column width.
 * Asciidoc (Markdown passthrough allowed).
 * Single H1/First-level title per document.
+* `readme.adoc` per directory to behave as an index on subdirectories or
+articles.
+
+== Sections
+* link:./windows/readme.adoc[Windows]
