@@ -1,0 +1,15 @@
+= Floating Point Associativity
+
+Floating point operations are not guaranteed associativity as there are inherent
+limitations on how data can be stored and operated on. A long series of
+additions on the same floating-point values can result in different outcomes.
+(This is contrary to purely analytical solutions where this is not a concern.)
+
+Digits on the smaller end of the significant figures are most likely to be
+affected, as that is where imprecision has its most noticeable effect.
+
+A demo repo is available here: https://github.com/CuroSalus/FpAssociativity
+
+Open requests:
+
+* Supply more details, information, statistics, etc.
