@@ -1,0 +1,7 @@
+= Computer Engineering
+
+Documents related to Computer Engineering.
+
+== Articles
+
+* link:./floating-point-associativity.adoc[Floating-Point Associativity]
